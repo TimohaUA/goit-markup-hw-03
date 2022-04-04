@@ -8,13 +8,15 @@
   --text-raleway: "Raleway", sans-serif;
 }
 
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 body {
   font-family: var(--text-roboto);
   margin: 0;
-}
-
-.inline_block{
-  display: inline-block;
 }
 
 header{
@@ -22,11 +24,20 @@ header{
     justify-content: space-between;
 }
 
-.nav_menu li, .contacts li{
-  display: inline-block;
-  padding: 16px;
+a {
+  text-decoration: none;
 }
 
+li {
+  display: block;
+  text-decoration: none;
+}
+
+.inline_block{
+  display: inline-block;
+}
+
+/*Header elements*/
 .logo{
 font-family: var(--text-raleway);
 font-weight: 700;
@@ -35,12 +46,15 @@ line-height: 1.2;
 letter-spacing: 0.03em;
 color: var(--main-color-hover);
 text-decoration: none;
-
-  padding: 0 75px 0 215px;
 }
 
 .logo > span {
   color: var(--main-color);
+}
+
+.nav_menu li, .contacts li{
+  display: inline-block;
+  padding: 16px;
 }
 
 .menu_a {
@@ -55,11 +69,6 @@ text-decoration: none;
   color: var(--main-color-hover);
 }
 
-.contacts{
-  padding-right: 215px;
-}
-
-
 .contacts_a {
   font-weight: 500;
   font-size: 14px;
@@ -72,21 +81,10 @@ text-decoration: none;
   color: var(--main-color-hover);
 }
 
-a {
-  text-decoration: none;
-}
 
-li {
-  display: block;
-  text-decoration: none;
-}
+/*Main elements*/
 
-.order_service {
-  background-color: var(--main-background-color);
-  text-align: center;
-  padding: 200px 0;
-}
-
+/*Main --- Banner*/
 h1 {
   font-weight: 900;
   font-size: 44px;
@@ -95,6 +93,12 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.order_service {
+  background-color: var(--main-background-color);
+  text-align: center;
+  padding: 200px 0;
 }
 
 .btn_order {
@@ -130,18 +134,16 @@ h2 {
   margin: 0;
 }
 
-
-
-
+/*Main --- Our goals*/
 .our_goals {
   display: none;
 }
 
 .our_goals_ul {
-  margin: 94px 215px;
-  padding-inline-start: 0;
+  /*margin: 94px auto;*/
   display: flex;
   justify-content: space-between;
+  padding: 94px 0;
 }
 
 .our_goals_ul > li {
@@ -167,34 +169,36 @@ h2 {
   color: var(--contacts-color);
 }
 
+/*Main --- Our works*/
 .work {  
   display: flex;
   justify-content: space-between;
   padding-inline-start: 0;
-  margin: 50px 215px 94px 215px;
+  margin: 50px 0 94px 0;
 }
 
+/*Main --- Our commands*/
+.our_comands {
+  background-color: #e5e5e5;
+  padding: 94px 0;
+}
 
 .comands {
   display: flex;
   justify-content: space-between;
-  padding-inline-start: 0;
-  margin: 50px 215px 94px 215px;
+  padding: 50px 0 0 0;
 }
-
 
 .comands li {
   width: 270px;
   height: 368px;
   background-color: white;
-  margin: 0 15px 0 15px;
 }
 
 .comands h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
@@ -204,18 +208,13 @@ h2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--contacts-color);
 }
 
 
-.our_comands {
-  background-color: #e5e5e5;
-  padding: 94px 0;
-}
-
+/*Footer*/
 footer {
   background-color: var(--main-background-color);
   padding: 60px 0;
@@ -226,7 +225,8 @@ footer {
 }
 
 .adresa {
-  padding: 0 215px;
+  margin: 0;
+  padding: 20px 0 0 0;
 }
 
 .adresa address {
@@ -252,8 +252,6 @@ footer {
 
 .portfol {
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .portfol > h1 {
@@ -261,6 +259,7 @@ footer {
   margin: 0;
 }
 
+/*Portfolio --- sort buttons*/
 .sort_btn {
   padding: 94px 0 50px 0;
   margin: 0;
@@ -285,13 +284,13 @@ footer {
   color: #ffffff;
 }
 
+/*Portfolio --- list works*/
 .list_work {  
   display: flex;
   flex-wrap: wrap;
   column-count: 3;
-  padding-inline-start: 0;
   justify-content: space-between;
-  padding: 0 215px 94px 215px;
+  padding: 0 0 94px 0;
 }
 
 .list_work h2 {
@@ -323,6 +322,6 @@ footer {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  margin: 15px 0 0 0; 
+  margin: 15px auto 0 auto;
   text-align: left;
 }
