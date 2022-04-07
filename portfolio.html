@@ -17,15 +17,13 @@
   <body>
     <!--Шапка (навігатор)-->
     <header>
-      <section class="container nav_head">
-        <nav class="nav_l_m">
+      <div class="container nav_panel">
+        <nav>
           <!--Логотип-->
-          <a href="./index.html" class="logo inline_block"
-            >Web<span>Studio</span></a
-          >
+          <a href="./index.html" class="logo">Web<span>Studio</span></a>
 
           <!--Навігація-->
-          <ul class="nav_menu inline_block">
+          <ul class="nav_menu">
             <li>
               <a href="./studio.html" class="menu_a">Студия</a>
             </li>
@@ -39,7 +37,7 @@
         </nav>
 
         <!--Активні посилання на контаки-->
-        <ul class="contacts inline_block">
+        <ul class="contacts">
           <li>
             <a href="mailto:info@devstudio.com" class="contacts_a"
               >info@devstudio.com</a
@@ -49,28 +47,28 @@
             <a href="tel:+380961111111" class="contacts_a">+38 096 111 11 11</a>
           </li>
         </ul>
-      </section>
+      </div>
     </header>
 
-    <section class="portfol container">
+    <section class="container section portfol">
       <h1>Сторінка портфоліo</h1>
 
       <!--Сортувальны кнопки-->
       <ul class="sort_btn">
-        <li class="inline_block">
-          <button class="btn_p" type="button">Все</button>
+        <li>
+          <button class="btn" type="button">Все</button>
         </li>
-        <li class="inline_block">
-          <button class="btn_p" type="button">Веб-сайты</button>
+        <li>
+          <button class="btn" type="button">Веб-сайты</button>
         </li>
-        <li class="inline_block">
-          <button class="btn_p" type="button">Приложения</button>
+        <li>
+          <button class="btn" type="button">Приложения</button>
         </li>
-        <li class="inline_block">
-          <button class="btn_p" type="button">Дизайн</button>
+        <li>
+          <button class="btn" type="button">Дизайн</button>
         </li>
-        <li class="inline_block">
-          <button class="btn_p" type="button">Маркетинг</button>
+        <li>
+          <button class="btn" type="button">Маркетинг</button>
         </li>
       </ul>
 
@@ -84,8 +82,10 @@
               height="294"
               alt="Фото Технокряк"
             />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+            <div class="work_info">
+              <h2>Технокряк</h2>
+              <p>Веб-сайт</p>
+            </div>
           </a>
         </li>
         <li>
@@ -96,8 +96,10 @@
               height="294"
               alt="Фото Постер New Orlean vs Golden Star"
             />
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
+            <div class="work_info">
+              <h2>Постер New Orlean vs Golden Star</h2>
+              <p>Дизайн</p>
+            </div>
           </a>
         </li>
         <li>
@@ -108,8 +110,10 @@
               height="294"
               alt="Фото Ресторан Seafood"
             />
-            <h2>Ресторан Seafood</h2>
-            <p>Приложение</p>
+            <div class="work_info">
+              <h2>Ресторан Seafood</h2>
+              <p>Приложение</p>
+            </div>
           </a>
         </li>
         <li>
@@ -120,8 +124,10 @@
               height="294"
               alt="Фото Проект Prime"
             />
-            <h2>Проект Prime</h2>
-            <p>Маркетинг</p>
+            <div class="work_info">
+              <h2>Проект Prime</h2>
+              <p>Маркетинг</p>
+            </div>
           </a>
         </li>
         <li>
@@ -132,8 +138,10 @@
               height="294"
               alt="Фото Проект Boxes"
             />
-            <h2>Проект Boxes</h2>
-            <p>Приложение</p>
+            <div class="work_info">
+              <h2>Проект Boxes</h2>
+              <p>Приложение</p>
+            </div>
           </a>
         </li>
         <li>
@@ -144,8 +152,10 @@
               height="294"
               alt="Фото Inspiration has no Borders"
             />
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <div class="work_info">
+              <h2>Inspiration has no Borders</h2>
+              <p>Веб-сайт</p>
+            </div>
           </a>
         </li>
         <li>
@@ -156,8 +166,10 @@
               height="294"
               alt="Фото Издание Limited Edition"
             />
-            <h2>Издание Limited Edition</h2>
-            <p>Дизайн</p>
+            <div class="work_info">
+              <h2>Издание Limited Edition</h2>
+              <p>Дизайн</p>
+            </div>
           </a>
         </li>
         <li>
@@ -168,8 +180,10 @@
               height="294"
               alt="Фото Проект LAB"
             />
-            <h2>Проект LAB</h2>
-            <p>Маркетинг</p>
+            <div class="work_info">
+              <h2>Проект LAB</h2>
+              <p>Маркетинг</p>
+            </div>
           </a>
         </li>
         <li>
@@ -180,8 +194,10 @@
               height="294"
               alt="Фото Growing Business"
             />
-            <h2>Growing Business</h2>
-            <p>Приложение</p>
+            <div class="work_info">
+              <h2>Growing Business</h2>
+              <p>Приложение</p>
+            </div>
           </a>
         </li>
       </ul>
@@ -196,18 +212,17 @@
         >
 
         <!--Адреса та контакти-->
-
-        <ul class="adresa">
-          <li>
-            <address>г. Киев, пр-т Леси Украинки, 26</address>
-          </li>
-          <li class="mail">
-            <a href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li class="phone">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="address">
+          <address>г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="adresa">
+            <li class="mail">
+              <a href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="phone">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </footer>
   </body>

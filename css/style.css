@@ -10,13 +10,13 @@
 
 .container{
   width: 100%;
-  max-width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1200px;
   margin: 0 auto;
+}
 
-  /*display: flex;
-  justify-content: space-between;*/
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 body {
@@ -34,25 +34,23 @@ li {
   text-decoration: none;
 }
 
-.inline_block{
-  display: inline-block;
-}
+
 
 /*Header elements*/
 header{
-  min-height: 80px;
-  display: flex;
+  border: 1px solid #ECECEC;  
 }
 
-.nav_head{
+.nav_panel{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  /*flex-wrap: wrap;*/
+  min-height: 80px;
 }
 
-.nav_l_m{
+nav{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -73,6 +71,11 @@ margin-right: 93px;
 
 .nav_menu, .contacts{
   display: flex;
+  padding: 0;
+}
+
+.contacts{
+  align-items: center;
 }
 
 .nav_menu li+li,
@@ -105,7 +108,7 @@ margin-right: 93px;
 }
 
 
-/*Main elements*/
+/*MAIN ELEMENTS*/
 
 /*Main --- Banner*/
 h1 {
@@ -158,23 +161,22 @@ h2 {
 }
 
 /*Main --- Our goals*/
-.our_goals {
+.our_goals_h {
   display: none;
 }
 
-.our_goals_ul {
+.our_goals {
   display: flex;
+  padding: 0;
   justify-content: space-between;
-  padding: 94px 0;
+  flex-wrap: wrap;
 }
 
-.our_goals_ul > li {
-  display: inline-block;
-  width: 23%;
+.our_goals>li{
+  flex-basis: 270px;
 }
 
-.our_goals_ul h3 {
-  padding: 0%;
+.our_goals h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
@@ -183,7 +185,7 @@ h2 {
   color: var(--main-color);
 }
 
-.our_goals_ul p {
+.our_goals p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -195,26 +197,43 @@ h2 {
 .work {  
   display: flex;
   justify-content: space-between;
-  padding-inline-start: 0;
-  margin: 50px 0 94px 0;
+  flex-wrap: wrap;
+  flex-basis: 370px;
+  padding: 0;
+  /*margin: 50px 0 94px 0;*/
+}
+
+.work_section{
+  padding-bottom: 94px;
+}
+
+.work_section h2{
+  padding-bottom: 50px;
 }
 
 /*Main --- Our commands*/
 .our_comands {
   background-color: #e5e5e5;
-  padding: 94px 0;
 }
 
 .comands {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px 0 0 0;
+  padding: 0;
+  margin: 0;
+}
+
+.our_comands h2{
+padding-bottom: 50px;
 }
 
 .comands li {
-  width: 270px;
-  height: 368px;
   background-color: white;
+}
+
+.worker{
+  padding: 30px auto;
 }
 
 .comands h3 {
@@ -246,18 +265,22 @@ footer {
   color: white;
 }
 
-.adresa {
-  margin: 0;
-  padding: 20px 0 0 0;
-}
-
-.adresa address {
+address{
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.address {
+  padding-top: 20px;
+}
+
+.adresa {
+  margin: 0;
+  padding: 0;
 }
 
 .mail > a,
@@ -272,22 +295,26 @@ footer {
 
 /*CSS PORTFOLIO*/
 
-.portfol {
-  text-align: center;
-}
-
 .portfol > h1 {
+  display: none;
   padding: 0;
   margin: 0;
 }
 
 /*Portfolio --- sort buttons*/
-.sort_btn {
-  padding: 94px 0 50px 0;
-  margin: 0;
+.sort_btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
-.btn_p {
+.sort_btn>li:not(:first-child)
+{
+  margin-left: 8px;
+}
+
+.btn {
   font-family: var(--text-roboto);
   font-weight: 500;
   font-size: 16px;
@@ -301,9 +328,10 @@ footer {
   cursor: pointer;
 }
 
-.btn_p:hover {
+.btn:hover {
   background-color: var(--main-color-hover);
   color: #ffffff;
+  cursor: pointer;
 }
 
 /*Portfolio --- list works*/
@@ -311,8 +339,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   column-count: 3;
-  justify-content: space-between;
-  padding: 0 0 94px 0;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.list_work li{
+  margin-bottom: 30px;
+}
+
+.work_info{
+  padding: 20px 24px;
 }
 
 .list_work h2 {
@@ -323,7 +360,6 @@ footer {
   letter-spacing: 0.06em;
   color: var(--main-color);
   display: inline-block;
-  padding: 20px 0 0 24px;
 }
 
 .list_work p {
@@ -334,7 +370,6 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--contacts-color);
-  padding: 0 0 20px 24px;
   margin: 0;
 }
 
@@ -344,6 +379,5 @@ footer {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  margin: 15px auto 0 auto;
   text-align: left;
 }

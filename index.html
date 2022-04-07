@@ -12,23 +12,21 @@
       rel="stylesheet"
     />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
     <!--Шапка (навігатор)-->
     <header>
-      <section class="container nav_head">
-        <nav class="nav_l_m">
+      <div class="container nav_panel">
+        <nav>
           <!--Логотип-->
-          <a href="./index.html" class="logo inline_block"
-            >Web<span>Studio</span></a
-          >
+          <a href="./index.html" class="logo">Web<span>Studio</span></a>
 
           <!--Навігація-->
-          <ul class="nav_menu inline_block">
+          <ul class="nav_menu">
             <li>
               <a href="./studio.html" class="menu_a">Студия</a>
             </li>
@@ -42,7 +40,7 @@
         </nav>
 
         <!--Активні посилання на контаки-->
-        <ul class="contacts inline_block">
+        <ul class="contacts">
           <li>
             <a href="mailto:info@devstudio.com" class="contacts_a"
               >info@devstudio.com</a
@@ -52,7 +50,7 @@
             <a href="tel:+380961111111" class="contacts_a">+38 096 111 11 11</a>
           </li>
         </ul>
-      </section>
+      </div>
     </header>
 
     <!-- Баннер -->
@@ -62,9 +60,9 @@
     </section>
 
     <!-- Наші цілі та переваги -->
-    <section class="container">
-      <h2 class="our_goals">Наші цілі та переваги</h2>
-      <ul class="our_goals_ul">
+    <section class="container section">
+      <h2 class="our_goals_h">Наші цілі та переваги</h2>
+      <ul class="our_goals">
         <!--Внимание к деталям-->
         <li>
           <h3>Внимание к деталям</h3>
@@ -101,51 +99,36 @@
     </section>
 
     <!--Наша робота-->
-    <section class="container">
+    <section class="container work_section">
       <h2>Чем мы занимаемся</h2>
       <ul class="work">
         <li>
           <a href="https://www.google.com/">
-            <img
-              src="./image/our_working_1.jpg"
-              width="370"
-              height="294"
-              alt="Фото першої роботи"
-            />
+            <img src="./image/our_working_1.jpg" alt="Фото першої роботи" />
           </a>
         </li>
         <li>
           <a
             href="https://about.google/?utm_source=google-UA&utm_medium=referral&utm_campaign=hp-footer&fg=1"
           >
-            <img
-              src="./image/our_working_2.jpg"
-              width="370"
-              height="294"
-              alt="Фото другої роботи"
-            />
+            <img src="./image/our_working_2.jpg" alt="Фото другої роботи" />
           </a>
         </li>
         <li>
           <a href="https://about.google/products/">
-            <img
-              src="./image/our_working_3.jpg"
-              width="370"
-              height="294"
-              alt="Фото третьої роботи"
-            />
+            <img src="./image/our_working_3.jpg" alt="Фото третьої роботи" />
           </a>
         </li>
       </ul>
     </section>
 
     <!--Наша команда-->
-    <section class="our_comands">
+    <section class="our_comands section">
       <div class="container">
         <h2>Наша команда</h2>
         <ul class="comands">
           <!--Игорь Демьяненко-->
-          <li class="inline_block">
+          <li>
             <a href="https://www.facebook.com/profile.php?id=100017404060093">
               <img
                 src="./image/Igor_Demyanenko.jpg"
@@ -153,13 +136,15 @@
                 height="260"
                 alt="Фото Игорь Демьяненко"
               />
-              <h3>Игорь Демьяненко</h3>
-              <p>Product Designer</p>
+              <div class="worker">
+                <h3>Игорь Демьяненко</h3>
+                <p>Product Designer</p>
+              </div>
             </a>
           </li>
 
           <!--Ольга Репина-->
-          <li class="inline_block">
+          <li>
             <a href="https://www.facebook.com/profile.php?id=100010853467044">
               <img
                 src="./image/Olha_Repina.jpg"
@@ -167,13 +152,15 @@
                 height="260"
                 alt="Фото Ольга Репина"
               />
-              <h3>Ольга Репина</h3>
-              <p>Frontend Developer</p>
+              <div class="worker">
+                <h3>Ольга Репина</h3>
+                <p>Frontend Developer</p>
+              </div>
             </a>
           </li>
 
           <!--Николай Тарасов-->
-          <li class="inline_block">
+          <li>
             <a href="https://www.facebook.com/profile.php?id=100012960483008">
               <img
                 src="./image/Nikolay_Tarasov.jpg"
@@ -181,13 +168,15 @@
                 height="260"
                 alt="Фото Николай Тарасов"
               />
-              <h3>Николай Тарасов</h3>
-              <p>Marketing</p>
+              <div class="worker">
+                <h3>Николай Тарасов</h3>
+                <p>Marketing</p>
+              </div>
             </a>
           </li>
 
           <!--Михаил Ермаков-->
-          <li class="inline_block">
+          <li>
             <a href="https://www.facebook.com/profile.php?id=100002098032545">
               <img
                 src="./image/Michail_Ermakov.jpg"
@@ -195,8 +184,10 @@
                 height="260"
                 alt="Фото Михаил Ермаков"
               />
-              <h3>Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <div class="worker">
+                <h3>Михаил Ермаков</h3>
+                <p>UI Designer</p>
+              </div>
             </a>
           </li>
         </ul>
@@ -212,18 +203,17 @@
         >
 
         <!--Адреса та контакти-->
-
-        <ul class="adresa">
-          <li>
-            <address>г. Киев, пр-т Леси Украинки, 26</address>
-          </li>
-          <li class="mail">
-            <a href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li class="phone">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="address">
+          <address>г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="adresa">
+            <li class="mail">
+              <a href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="phone">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </footer>
   </body>
