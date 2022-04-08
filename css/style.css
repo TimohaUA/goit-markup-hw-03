@@ -194,21 +194,28 @@ h2 {
 }
 
 /*Main --- Our works*/
-.work {  
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-basis: 370px;
-  padding: 0;
-  /*margin: 50px 0 94px 0;*/
-}
-
 .work_section{
   padding-bottom: 94px;
 }
 
 .work_section h2{
   padding-bottom: 50px;
+}
+
+.work {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  padding: 0;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.work>li{
+  padding: 0;
+  flex-basis: calc(100%/3)-1px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 /*Main --- Our commands*/
@@ -221,7 +228,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin: -30px 0 0 0;
 }
 
 .our_comands h2{
@@ -230,6 +237,7 @@ padding-bottom: 50px;
 
 .comands li {
   background-color: white;
+  margin-top: 30px;
 }
 
 .worker{
@@ -335,17 +343,29 @@ address{
 }
 
 /*Portfolio --- list works*/
+
+/*width="370"
+height="294"*/
+
 .list_work {  
-  display: flex;
-  flex-wrap: wrap;
-  column-count: 3;
-  justify-content: space-evenly;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-.list_work li{
-  margin-bottom: 30px;
+.list_work>li{
+  flex-basis: calc(100%/3)-1px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.list_work img{
+  width: 100%;
+  display: block;
 }
 
 .work_info{
