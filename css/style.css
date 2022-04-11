@@ -245,7 +245,8 @@ margin-bottom: 50px;
 }
 
 .worker{
-  padding: 30px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .comands h3 {
@@ -255,6 +256,7 @@ margin-bottom: 50px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin: 0;
 }
 
 .comands p {
@@ -264,6 +266,7 @@ margin-bottom: 50px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--contacts-color);
+  margin: 0;
 }
 
 
@@ -287,12 +290,16 @@ address{
 }
 
 .address {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .adresa {
   margin: 0;
   padding: 0;
+}
+
+.adresa>li{
+  margin-top: 9px;
 }
 
 .mail > a,
